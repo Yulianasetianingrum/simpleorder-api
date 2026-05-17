@@ -8,7 +8,7 @@
 
 SimpleOrder is a production-ready, highly scalable RESTful API built for an Order Management System. It is engineered using **Golang** and the **Fiber** web framework, strictly adhering to **Clean Architecture** principles to ensure modularity, testability, and separation of concerns.
 
-## ✨ Features
+##  Features
 
 - **Robust Authentication:** Secure JWT-based authentication and role-based access control (RBAC).
 - **Transactional Orders:** Multi-item order placement with atomic database transactions to calculate totals and manage product stock reliably.
@@ -17,7 +17,7 @@ SimpleOrder is a production-ready, highly scalable RESTful API built for an Orde
 - **API Documentation:** Auto-generated interactive API documentation using Swagger UI.
 - **Containerization:** fully dockerized with a multi-stage Dockerfile and docker-compose.
 
-## 🛠️ Tech Stack
+##  Tech Stack
 
 - **Language:** Go (Golang)
 - **Framework:** Fiber (Express inspired web framework)
@@ -40,7 +40,7 @@ cmd/
 pkg/                 # Shared utilities (PDF, JWT, Responses)
 ```
 
-## 🚀 Getting Started
+## Getting Started
 
 ### Prerequisites
 - [Go](https://golang.org/doc/install) 1.22 or higher
@@ -77,7 +77,7 @@ make run
 # or: go run cmd/app/main.go
 ```
 
-## 📖 API Documentation
+## API Documentation
 
 Once the application is running, you can explore the API endpoints using the interactive Swagger UI:
 
@@ -85,7 +85,7 @@ Once the application is running, you can explore the API endpoints using the int
 
 *(Optional: Add a screenshot of your Swagger UI here)*
 
-## 💡 Available Endpoints
+##  Available Endpoints
 
 ### Auth
 - `POST /api/v1/auth/register` - Register a new user
@@ -105,8 +105,6 @@ Once the application is running, you can explore the API endpoints using the int
 ### Dashboard
 - `GET /api/v1/dashboard/stats` - Get summary statistics
 
-## 📜 Postman Collection
+##  Postman Collection
 A pre-configured Postman collection is included in the root directory (`simpleorder.postman_collection.json`). Simply import it into Postman to start testing the APIs immediately.
 
----
-*Built with ❤️ to demonstrate Clean Architecture in Go.*
