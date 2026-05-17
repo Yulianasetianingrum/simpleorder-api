@@ -17,7 +17,9 @@ func SetupRoutes(app *fiber.App,
 	jwtSecret string) {
 
 	// Swagger
-	app.Get("/swagger/*", swagger.HandlerDefault)
+	app.Get("/swagger/*", swagger.New(swagger.Config{
+		URL: "doc.json",
+	}))
 
 	api := app.Group("/api")
 	v1 := api.Group("/v1")
